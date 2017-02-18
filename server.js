@@ -28,7 +28,7 @@ var htmlTemplate=
 ` <html>
     <head>
         <title>
-            $(title);
+            $(title)
         </title>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
@@ -38,13 +38,13 @@ var htmlTemplate=
                 <a href="/">Home</a>
             </div>
         <div>
-            <h1>$(heading);</h1>
+            <h1>$(heading)</h1>
         </div>
         <div>
-            $(date);
+            $(date)
         </div>
         <div>
-            $(content);
+            $(content)
         </div>
         </div>
     </body>
