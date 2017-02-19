@@ -7,12 +7,12 @@ app.use(morgan('combined'));
 
 var articles={
     'article-one' :{ 
-    title: 'Atricle Three',
-    heading: 'Article Three',
+    title: 'Atricle One',
+    heading: 'Article One',
     date: 'Sep 20 2016',
     content:         
      `   <p>
-            This is Article - three. This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.This is Article - three.
+            This is Article ONe. This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe.This is Article ONe. 
             </p> `
 },
     'article-two' : {
