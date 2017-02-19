@@ -28,24 +28,24 @@ var htmlTemplate=
 ` <html>
     <head>
         <title>
-            $(title)
+            ${title}
         </title>
-        <link href="/ui/style.css" rel="stylesheet" />
+       <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
-            <div>
-                <a href="/">Home</a>
-            </div>
         <div>
-            <h1>$(heading)</h1>
+            <a href="/">Home</a>
         </div>
         <div>
-            $(date)
+            <h3>${heading}</h3>
         </div>
         <div>
-            $(content)
+            ${date}
         </div>
+        <div>
+        ${content}
+         </div>
         </div>
     </body>
 </html>
