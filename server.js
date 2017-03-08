@@ -1,9 +1,15 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
+var Pool= require('pg').Pool;
 var app = express();
 app.use(morgan('combined'));
+var config={
+    host: 'localhost:5432',
+    user: 'kuldeepsrathaur',
+    password: process.env.DBPASSWORD,
+    database: 'kuldeepsrathaur'
+};
 
 var articles={
     'article-one' :{ 
@@ -77,6 +83,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/test-db',function(req,res){
+    if(err)
+    res.send(err.tostring());
+})
 app.get('/:articlename', function (req, res) {
     var articlename=req.params.articlename;
   res.send(createTemplate(articles[articlename]));
