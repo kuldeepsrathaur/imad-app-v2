@@ -10,7 +10,7 @@ var config={
     password: process.env.DBPASSWORD,
     database: 'kuldeepsrathaur'
 };
-
+var pool= new Pool(config);
 var articles={
     'article-one' :{ 
     title: 'Atricle One',
