@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 var config={
     host: 'localhost:5432',
     user: 'kuldeepsrathaur',
-    password: process.env.DBPASSWORD,
+    password: process.env.DB_PASSWORD,
     database: 'kuldeepsrathaur'
 };
 var pool= new Pool(config);
@@ -84,7 +84,13 @@ app.get('/', function (req, res) {
 });
 
 app.get('/test-db',function(req,res){
-    if(err)
+    pool.query("select * from test", function(req, res){
+        if(err){
+            res.status(500).send(err.toString());
+        }
+        else
+        res.send(JSON.stringfy(result));
+    })
     res.send(err.tostring());
 })
 app.get('/:articlename', function (req, res) {
